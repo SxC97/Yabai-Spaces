@@ -21,107 +21,12 @@ I use the Yabai Window Manager for MacOS. One of the freatures of Yabai is disab
 ## The Solution
 This plugin (based on the [yabai/skhd helper](https://getbitbar.com/plugins/Tools/yabai_skhd.1s.sh) plugin by James Won) for Bitbar, displays the total number of spaces you have open and highlights the currently focused space.
 
-## Customization
-This plugin has support for unique left and right bookshelfs, dividors between numbers, and coloring for both the text fot the spaces and a different color for the selected space. Also includes a compact mode to save space!
-
-### Colors
-The plugin supports all 8 ANSI colors `BLACK` `RED` `GREEN` `YELLOW` `BLUE` `MAGENTA` `CYAN` and `WHITE`.
-You can set a unique color for both the selected space and the unselected spaces. That gives you a total of 56 unique color combinations!
-
-Some example color schemes to get you started.
-
-Name | Settings | Preview
------|----------|--------
-Aqua | `COLOR=$BLUE Default=$WHITE` | ![Aqua](/Images/Colors/Aqua.png)
-Christmas | `COLOR=$RED Default=$GREEN` | ![Christmas](/Images/Colors/Christmas.png)
-Cash | `COLOR=$WHITE Default=$GREEN` | ![Cash](/Images/Colors/Cash.png)
-Vaporwave | `COLOR=$MAGENTA Default=$WHITE` | ![Vapor](/Images/Colors/Vapor.png)
-Outrun | `COLOR=$YELLOW Default=$MAGENTA` | ![Outrun](/Images/Colors/Outrun.png)
-Ikea | `COLOR=$YELLOW Default=$BLUE` | ![Ikea](/Images/Colors/Ikea.png)
-Mirrors Edge | `COLOR=$RED Default=$WHITE` | ![Mirror](/Images/Colors/Mirror.png)
-Mono | `COLOR=$WHITE Default=$BLACK` | ![Mono](/Images/Colors/Mono.png)
-
-### Separators
-This plugin also supports most unicode charecters and emojis for the dividors between spaces and the bookendings.
-
-Here are some example configurations to get you started.
-
-Name | Settings | Preview
------|----------|--------
-Simple | `LEFT=' ' DIV=' ｜ ' RIGHT=' ' SELECTLEFT='｜' SELECTRIGHT='｜'` | ![Simple](/Images/Separators/Simple.png)
-Web Developer | `LEFT='{ ' DIV=' \\ ' RIGHT=' }' SELECTLEFT='<' SELECTRIGHT='>'` | ![Web](/Images/Separators/Web.png)
-Jason | `LEFT='[ ' DIV=' : ' RIGHT=' ]' SELECTLEFT='{' SELECTRIGHT='}'` | ![Jason](/Images/Separators/Jason.png)
-Writer | `LEFT='\( ' DIV=' \" ' RIGHT=' \)' SELECTLEFT='\*' SELECTRIGHT='\*'` | ![Writer](/Images/Separators/Writer.png)
-Mathematics | `LEFT='≺ ' DIV=' ∿ ' RIGHT=' ≻' SELECTLEFT='⟦' SELECTRIGHT='⟧'` | ![Math](/Images/Separators/Math.png)
-Menacing | `LEFT='「 ' DIV=' ° ' RIGHT=' 」' SELECTLEFT='「' SELECTRIGHT='」'` | ![Menacing](/Images/Separators/Menacing.png)
-Peacefull | `LEFT='☛ ' DIV=' ✦ ' RIGHT=' ☚' SELECTLEFT='~' SELECTRIGHT='~'` | ![Peace](/Images/Separators/Peace.png)
-
-### Space Indicators)
-This plugin supports different dividors to go between spaces. 
-
-Here are some example configurations to get you started.
-Name | Settings | Preview
------|----------|--------
-Arabic | `SPACES="1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 0"` | ![Arabic](/Images/Spaces/Arabic.png)
-Numbers | `SPACES="ONE TWO THREE FOUR FIVE SIX SEVEN EIGHT NINE TEN ELEVEN TWELVE THIRTEEN FOURTEEN FIFTEEN SIXTEEN ZERO"` | ![Numbers](/Images/Spaces/Numbers.png)
-Roman | `SPACES="I II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI N"` | ![Roman](/Images/Spaces/Roman.png)
-Circles | `SPACES="① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨ ⑩ ⑪ ⑫ ⑬ ⑭ ⑮ ⑯ ⓪"` | ![Circles](/Images/Spaces/Circles.png)
-Negative | `SPACES="❶ ❷ ❸ ❹ ❺ ❻ ❼ ❽ ❾ ❿ ⓫ ⓬ ⓭ ⓮ ⓯ ⓰ ⓿"` | ![Negative](/Images/Spaces/Negative.png)
-Emoji | `SPACES="😀 🐶 🍎 ⚾️ 📱 💎 📩 ❤️ 🌐 🔔 🇮🇳 🐵 🎬 🎲 🚗 🚀 🚫"` | ![Emoji](/Images/Spaces/Emoji.png)
-
-### Compact Mode
-Compact Mode eliminates all spaces from the string and saves some space if menubar real estate is at a premium.
-
-Normal Mode | Compact Mode
-------------|-------------
-![Normal](/Images/Compact/Normal.png) | ![Compact](/Images/Compact/Compact.png)
-
-### Fonts
-Font variable allows you to change the font and size. Also supports font ligatures! The screenshots show the font [FuraCode Retina Nerd Font Mono](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode/Retina).
-
-Note: A monowidth font is recomended. [List of monowidth programming fonts](https://app.programmingfonts.org)
-Note: If you use a [Nerd Font Patched](https://www.nerdfonts.com) font, you will have access to several _more_ unique icons!
-
-### Language support
-Included UTF Encoding variable _should_ allow support for multiple languages. Testers are welcome!
-
-### Emoji Support
-🤓
-
 ## Dependencies
 [Yabai](https://github.com/koekeishiya/yabai), [SHKD](https://github.com/koekeishiya/skhd), [Bitbar](https://github.com/matryer/bitbar), [jq](https://stedolan.github.io/jq/), [Visual Studio Code](https://code.visualstudio.com), [zsh](http://www.zsh.org), and [brew](https://brew.sh)
 
-## Installation and Configuration Instructions
+## Installation Instructions
 
-1. Download the yabai.1d.sh file and drop into the Bitbar plugin folder.
-    * By default the plugin runs once a day, if you don't want to implement the Yabai integration below, you can rename it to yabai.1s.sh to have it run once a day. This is still slower than the Yabai integration outlined below and increases cpu usage quite a bit. This configuration is supported but is not recomended.
-1. (optional)Set UTF encoding for your language. By default this plugin should support english and spanish. Please open an issue if you have problems with other languages.
-1. Ensure that the location of your .yabairc, .shkdrc, and yabai plugin file are accurately reflected in the if statements at the top of the document.
-1. Set COMPACT to `TRUE` or `FALSE`
-1. Set COLOR and DEFAULT
-1. Set bookend icons, dividor icons, and selected icons.
-1. Set font and size
-1. Set Spaces to arabic numerals, written numbers, roman numbers, emojis, or unicode icons.
-
-## Yabai and SHKD Integration
-
-1. open the .yabairc file and add the following at the bottom. See example .yabairc file linked above if you are confused.
-
-```
-yabai -m signal --add event=space_changed action="open 'bitbar://refreshPlugin?name=yabai.1d.sh'"
-yabai -m signal --add event=display_added action="open 'bitbar://refreshPlugin?name=yabai.1d.sh'"
-yabai -m signal --add event=display_removed action="open 'bitbar://refreshPlugin?name=yabai.1d.sh'"
-yabai -m signal --add event=display_changed action="open 'bitbar://refreshPlugin?name=yabai.1d.sh'"
-yabai -m signal --add event=display_moved action="open 'bitbar://refreshPlugin?name=yabai.1d.sh'"
-```
-This adds rules that refresh the yabai plugin whenever the space is changed, display is added, removed, changed, or moved.
-
-1. open the .skhdrc file and append the following to the `create desktop, move window and follow focus`, `create desktop and follow focus`, `destroy desktop`, `fast focus desktop`, `send window to desktop and follow focus`, `send window to monitor and follow focus`, `Move space left`, `Move space right`, and `focus monitor` hotkeys. 
-See example .skhdrc file linked above if you are confused.
-
-` && open 'bitbar://refreshPlugin?name=yabai.1d.sh'`
-
-This refreshes the plugin whenever you enter the shortcut for creating, destroying, moving, or focusing spaces. If you changed the file name to update more often, that needs to be reflected here.
+Download the yabai.1d.sh file and drop into the Bitbar plugin folder. For more indepth instruction and a configuration guide, check the wiki!
 
 ## Known issues
 
