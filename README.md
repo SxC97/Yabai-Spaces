@@ -27,7 +27,7 @@ This plugin (based on the [yabai/skhd helper](https://getbitbar.com/plugins/Tool
 
 ## Installation Instructions
 
-Download the yabai.1d.sh file and drop into the Bitbar plugin folder. For more indepth instruction and a configuration guide, check the wiki!
+Download the yabai.1d.sh file and drop into the Bitbar plugin folder. For more indepth instruction and a configuration guide, check out the [wiki](https://github.com/SxC97/Yabai-Spaces/wiki)!
 
 ## Known issues
 
