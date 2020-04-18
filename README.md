@@ -31,7 +31,7 @@ This plugin (based on the [yabai/skhd helper](https://getbitbar.com/plugins/Tool
 
 Download the yabai.1d.sh file and drop it into the Bitbar plugin folder. For a more in-depth guide, check out the [wiki](https://github.com/SxC97/Yabai-Spaces/wiki)!
 
-## Known issues
+## Known Issues
 
  * when switching spaces, no windows on the newly focused space are selected. Requires clicking to start interacting with said window. This is due to calling the `open 'bitbar://refreshPlugin?name=yabai.1d.sh'` command. The Bitbar application takes focus when called and doesn't return focus to a window in the new space. Have not found a way to circumvent this yet. Suggestions welcome!
  
@@ -39,7 +39,7 @@ Download the yabai.1d.sh file and drop it into the Bitbar plugin folder. For a m
  
  * Sometimes does not update when closing fullscreen space from Mission Control. This is a Yabai issue as it does not count closing a fullscreen space as "destroyed".
  
-## Features to add
+## Features To Add
 
 - [ ] Allow unique colors for bookends, dividers, icons, and selectors.
 - [ ] Add support for a string of the same icons. e.g. SPACES="• • • • • • • • • • • • • • • •" and select the correct one. Not supported with the current parser.
