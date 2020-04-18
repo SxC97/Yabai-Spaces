@@ -5,11 +5,11 @@ A Bitbar plugin that displays the total number of spaces and highlights the curr
 
 ## Features
 * User Customizable colors, numbers, unicode icons, fonts and sizes.
-  * Well documented. Allows for even novice users to make changes as they want.
+  * Well documented. Allows for even novice users to easily make changes.
   * Emoji Support!
   * Multilingual support (_probably_).
   * Compact mode to save space.
-* Fast! Code runs in log(n) time. Performance could probably be increased with a little refactoring to reduce programs called.
+* Fast! Code runs in log(n) time. Performance could probably be increased with a little refactoring to reduce programs calls.
 * Supports all versions of MacOS supported by Bitbar (_probably_).
 * Multi monitor support.
 * Deep integration with Yabai and SKHD
