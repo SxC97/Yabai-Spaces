@@ -11,6 +11,8 @@
 # For skhd, see: https://github.com/koekeishiya/skhd
 # Although very little of the original code remains, this plugin was inspired by James Won's "yabai/skhd helper" https://getbitbar.com/plugins/Tools/yabai_skhd.1s.sh
 
+# If you are confused about anything, find any bugs, want to request and features, or contribute check out the Github! https://github.com/SxC97/Yabai-Spaces
+
 # Sets unicode encoding to UTF-8. Fixes issues with displaying *many* but not *all* unicode charecters.
 export LANG="es_ES.UTF-8"
 
