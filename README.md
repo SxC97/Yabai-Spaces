@@ -9,6 +9,7 @@ A Bitbar plugin that displays the total number of spaces and highlights the curr
   * Emoji Support!
   * Multilingual support (_probably_).
   * Compact mode to save space.
+  * Full instructions in the [Wiki](https://github.com/SxC97/Yabai-Spaces/wiki)!
 * Fast! Code runs in log(n) time. Performance could probably be increased with a little refactoring to reduce programs calls.
 * Supports all versions of MacOS supported by Bitbar (_probably_).
 * Multi monitor support.
