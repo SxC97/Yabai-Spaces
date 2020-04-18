@@ -13,6 +13,7 @@ A Bitbar plugin that displays the total number of spaces and highlights the curr
 * Supports all versions of MacOS supported by Bitbar (_probably_).
 * Multi monitor support.
 * Deep integration with Yabai and SKHD
+* Light mode and Dark mode support!
 * High Preformance! Plugin only runs when space focus is changes, space is created, or destroid.
 
 ## The Problem So Far
