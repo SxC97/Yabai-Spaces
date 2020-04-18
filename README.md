@@ -17,7 +17,7 @@ A Bitbar plugin that displays the total number of spaces and highlights the curr
 * High Preformance! Plugin only runs when space focus is changes, space is created, or destroid.
 
 ## The Problem So Far
-I use the Yabai Window Manager for MacOS. One of the freatures of Yabai is disabling the animation when changing spaces. For power users, this is a great feature that speeds up you're workflow. The issue is that sometimes it can be difficult to know which space your on without the animation. Yabai includes a default bar that gives you this information, but it isnt _that_ customizable and requires that the default menu bar be hidden. I have several other utilities in the menubar (such as iStatsMenu and Carrot Weather) and don't want them hidden all the time. Übersicht widgets also wouldn't work for this reason.
+I use the Yabai Window Manager for MacOS. One of the freatures of Yabai is disabling the animation when changing spaces. For power users, this is a great feature that speeds up your workflow. The issue is that sometimes it can be difficult to know which space you're on without the animations. Yabai includes a default bar that gives you this information, but it isn't _that_ customizable and requires that the default menu bar be hidden. I have several other utilities in the menubar (such as iStatsMenu and Carrot Weather) and don't want them hidden all the time. Übersicht widgets also wouldn't work for this reason.
 
 ## The Solution
 This plugin (based on the [yabai/skhd helper](https://getbitbar.com/plugins/Tools/yabai_skhd.1s.sh) plugin by James Won) for Bitbar, displays the total number of spaces you have open and highlights the currently focused space.
@@ -27,11 +27,11 @@ This plugin (based on the [yabai/skhd helper](https://getbitbar.com/plugins/Tool
 
 ## Installation Instructions
 
-Download the yabai.1d.sh file and drop into the Bitbar plugin folder. For a more indepth guide, check out the [wiki](https://github.com/SxC97/Yabai-Spaces/wiki)!
+Download the yabai.1d.sh file and drop it into the Bitbar plugin folder. For a more in-depth guide, check out the [wiki](https://github.com/SxC97/Yabai-Spaces/wiki)!
 
 ## Known issues
 
- * when switching spaces, no windows on the newly focused space are selected. Requires clicking to start interacting with said window. This is due to calling the `open 'bitbar://refreshPlugin?name=yabai.1d.sh'` command. The Bitbar application takes focus when called and doesnt return focus to a window in the new space. Have not found a way to circumvent this. Suggestions welcome!
+ * when switching spaces, no windows on the newly focused space are selected. Requires clicking to start interacting with said window. This is due to calling the `open 'bitbar://refreshPlugin?name=yabai.1d.sh'` command. The Bitbar application takes focus when called and doesn't return focus to a window in the new space. Have not found a way to circumvent this yet. Suggestions welcome!
  
  * Plugin displays "Updating..." text when switching spaces. I believe this is possible to [fix](https://github.com/matryer/bitbar/issues/545) but I have not managed to get this to work.
  
@@ -40,9 +40,9 @@ Download the yabai.1d.sh file and drop into the Bitbar plugin folder. For a more
 ## Features to add
 
 - [ ] Allow unique colors for bookends, dividers, icons, and selectors.
-- [ ] Add support for a string of same icons. e.g. SPACES="• • • • • • • • • • • • • • • •" and select the correct one. Not supported with the current parser.
-- [ ] Allow shortcut to edit files in other text editors e.x. nvim, emacs, BBEdit, etc... Difficult to implement without a cli tool for said editor. For terminal editors a clunky solution is `open 'iTerm' && nvim ~/.yabairc` and set `terminal=true` in the echo statement at the bottom. Unfortunately, this is not reliable.
-- [ ] Better multi monitor support. Display total number of spaces and selected space for each display. Would require a lot of refactoring but should be possible.
+- [ ] Add support for a string of the same icons. e.g. SPACES="• • • • • • • • • • • • • • • •" and select the correct one. Not supported with the current parser.
+- [ ] Allow shortcut to edit files in other text editors e.x. nvim, emacs, BBEdit, etc... Difficult to implement without a cli tool for said editor. For terminal editors, a clunky solution is `open 'iTerm' && nvim ~/.yabairc` and set `terminal=true` in the echo statement at the bottom. Unfortunately, this is not very reliable.
+- [ ] Better multi monitor support. Display total number of spaces and selected space for each display. Would require a lot of refactoring, but, should be possible.
 - [ ] Better support for more than 16 spaces. Idea is to display as a fraction e.x. 16/30.
 
 ## Credit
