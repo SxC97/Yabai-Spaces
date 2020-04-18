@@ -1,7 +1,7 @@
 # Yabai-Spaces
 A Bitbar plugin that displays the total number of spaces and highlights the current one.
 
-![Aqua](/Images/Aqua.png)
+![Aqua](/Images/Colors/Aqua.png)
 
 ## Features
 * User Customizable colors, numbers, unicode icons, fonts and sizes.
@@ -32,14 +32,14 @@ Some example color schemes to get you started.
 
 Name | Settings | Preview
 -----|----------|--------
-Aqua | `COLOR=$BLUE Default=$WHITE` | ![Aqua](/Images/Aqua.png)
-Christmas | `COLOR=$RED Default=$GREEN` | ![Christmas](/Images/Christmas.png)
-Cash | `COLOR=$WHITE Default=$GREEN` | ![Cash](/Images/Cash.png)
-Vaporwave | `COLOR=$MAGENTA Default=$WHITE` | ![Vapor](/Images/Vapor.png)
-Outrun | `COLOR=$YELLOW Default=$MAGENTA` | ![Outrun](/Images/Outrun.png)
-Ikea | `COLOR=$YELLOW Default=$BLUE` | ![Ikea](/Images/Ikea.png)
-Mirrors Edge | `COLOR=$RED Default=$WHITE` | ![Mirror](/Images/Mirror.png)
-Mono | `COLOR=$WHITE Default=$BLACK` | ![Mono](/Images/Mono.png)
+Aqua | `COLOR=$BLUE Default=$WHITE` | ![Aqua](/Images/Colors/Aqua.png)
+Christmas | `COLOR=$RED Default=$GREEN` | ![Christmas](/Images/Colors/Christmas.png)
+Cash | `COLOR=$WHITE Default=$GREEN` | ![Cash](/Images/Colors/Cash.png)
+Vaporwave | `COLOR=$MAGENTA Default=$WHITE` | ![Vapor](/Images/Colors/Vapor.png)
+Outrun | `COLOR=$YELLOW Default=$MAGENTA` | ![Outrun](/Images/Colors/Outrun.png)
+Ikea | `COLOR=$YELLOW Default=$BLUE` | ![Ikea](/Images/Colors/Ikea.png)
+Mirrors Edge | `COLOR=$RED Default=$WHITE` | ![Mirror](/Images/Colors/Mirror.png)
+Mono | `COLOR=$WHITE Default=$BLACK` | ![Mono](/Images/Colors/Mono.png)
 
 ### Separators
 This plugin also supports most unicode charecters and emojis for the dividors between spaces and the bookendings.
@@ -48,13 +48,13 @@ Here are some example configurations to get you started.
 
 Name | Settings | Preview
 -----|----------|--------
-Simple | `LEFT=' ' DIV=' ｜ ' RIGHT=' ' SELECTLEFT='｜' SELECTRIGHT='｜'` | ![Simple](/Images/Simple.png)
-Web Developer | `LEFT='{ ' DIV=' \\ ' RIGHT=' }' SELECTLEFT='<' SELECTRIGHT='>'` | ![Web](/Images/Web.png)
-Jason | `LEFT='[ ' DIV=' : ' RIGHT=' ]' SELECTLEFT='{' SELECTRIGHT='}'` | ![Jason](/Images/Jason.png)
-Writer | `LEFT='\( ' DIV=' \" ' RIGHT=' \)' SELECTLEFT='\*' SELECTRIGHT='\*'` | ![Writer](/Images/Writer.png)
-Mathematics | `LEFT='≺ ' DIV=' ∿ ' RIGHT=' ≻' SELECTLEFT='⟦' SELECTRIGHT='⟧'` | ![Math](/Images/Math.png)
-Menacing | `LEFT='「 ' DIV=' ° ' RIGHT=' 」' SELECTLEFT='「' SELECTRIGHT='」'` | ![Menacing](/Images/Menacing.png)
-Peacefull | `LEFT='☛ ' DIV=' ✦ ' RIGHT=' ☚' SELECTLEFT='~' SELECTRIGHT='~'` | ![Peace](/Images/Peace.png)
+Simple | `LEFT=' ' DIV=' ｜ ' RIGHT=' ' SELECTLEFT='｜' SELECTRIGHT='｜'` | ![Simple](/Images/Separators/Simple.png)
+Web Developer | `LEFT='{ ' DIV=' \\ ' RIGHT=' }' SELECTLEFT='<' SELECTRIGHT='>'` | ![Web](/Images/Separators/Web.png)
+Jason | `LEFT='[ ' DIV=' : ' RIGHT=' ]' SELECTLEFT='{' SELECTRIGHT='}'` | ![Jason](/Images/Separators/Jason.png)
+Writer | `LEFT='\( ' DIV=' \" ' RIGHT=' \)' SELECTLEFT='\*' SELECTRIGHT='\*'` | ![Writer](/Images/Separators/Writer.png)
+Mathematics | `LEFT='≺ ' DIV=' ∿ ' RIGHT=' ≻' SELECTLEFT='⟦' SELECTRIGHT='⟧'` | ![Math](/Images/Separators/Math.png)
+Menacing | `LEFT='「 ' DIV=' ° ' RIGHT=' 」' SELECTLEFT='「' SELECTRIGHT='」'` | ![Menacing](/Images/Separators/Menacing.png)
+Peacefull | `LEFT='☛ ' DIV=' ✦ ' RIGHT=' ☚' SELECTLEFT='~' SELECTRIGHT='~'` | ![Peace](/Images/Separators/Peace.png)
 
 ### Space Indicators)
 This plugin supports different dividors to go between spaces. 
@@ -62,19 +62,19 @@ This plugin supports different dividors to go between spaces.
 Here are some example configurations to get you started.
 Name | Settings | Preview
 -----|----------|--------
-Arabic | `SPACES="1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 0"` | ![Arabic](/Images/Arabic.png)
+Arabic | `SPACES="1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 0"` | ![Arabic](/Images/Spaces/Arabic.png)
 Numbers | `SPACES="ONE TWO THREE FOUR FIVE SIX SEVEN EIGHT NINE TEN ELEVEN TWELVE THIRTEEN FOURTEEN FIFTEEN SIXTEEN ZERO"` | ![Numbers](/Images/Numbers.png)
-Roman | `SPACES="I II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI N"` | ![Roman](/Images/Roman.png)
-Circles | `SPACES="① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨ ⑩ ⑪ ⑫ ⑬ ⑭ ⑮ ⑯ ⓪"` | ![Circles](/Images/Circles.png)
-Negative | `SPACES="❶ ❷ ❸ ❹ ❺ ❻ ❼ ❽ ❾ ❿ ⓫ ⓬ ⓭ ⓮ ⓯ ⓰ ⓿"` | ![Negative](/Images/Negative.png)
-Emoji | `SPACES="😀 🐶 🍎 ⚾️ 📱 💎 📩 ❤️ 🌐 🔔 🇮🇳 🐵 🎬 🎲 🚗 🚀 🚫"` | ![Emoji](/Images/Emoji.png)
+Roman | `SPACES="I II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI N"` | ![Roman](/Images/Spaces/Roman.png)
+Circles | `SPACES="① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨ ⑩ ⑪ ⑫ ⑬ ⑭ ⑮ ⑯ ⓪"` | ![Circles](/Images/Spaces/Circles.png)
+Negative | `SPACES="❶ ❷ ❸ ❹ ❺ ❻ ❼ ❽ ❾ ❿ ⓫ ⓬ ⓭ ⓮ ⓯ ⓰ ⓿"` | ![Negative](/Images/Spaces/Negative.png)
+Emoji | `SPACES="😀 🐶 🍎 ⚾️ 📱 💎 📩 ❤️ 🌐 🔔 🇮🇳 🐵 🎬 🎲 🚗 🚀 🚫"` | ![Emoji](/Images/Spaces/Emoji.png)
 
 ### Compact Mode
 Compact Mode eliminates all spaces from the string and saves some space if menubar real estate is at a premium.
 
 Normal Mode | Compact Mode
 ------------|-------------
-![Normal](/Images/Normal.png) | ![Compact](/Images/Compact.png)
+![Normal](/Images/Compact/Normal.png) | ![Compact](/Images/Compact/Compact.png)
 
 ### Fonts
 Font variable allows you to change the font and size. Also supports font ligatures! The screenshots show the font [FuraCode Retina Nerd Font Mono](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode/Retina).
