@@ -44,6 +44,6 @@ Download the yabai.1d.sh file and drop it into the Bitbar plugin folder. For a m
 - [ ] Allow shortcut to edit files in other text editors e.x. nvim, emacs, BBEdit, etc... Difficult to implement without a cli tool for said editor. For terminal editors, a clunky solution is `open 'iTerm' && nvim ~/.yabairc` and set `terminal=true` in the echo statement at the bottom. Unfortunately, this is not very reliable.
 - [ ] Better multi monitor support. Display total number of spaces and selected space for each display. Would require a lot of refactoring, but, should be possible.
 - [ ] Better support for more than 16 spaces. Idea is to display as a fraction e.x. 16/30.
-
+- [ ] Add support for images in $SPACES
 ## Credit
 Feel free to make changes and republish as you see fit but please give credit in the form of a link to this page! A lot of sleepless nights were spent on this project and as my first shell script i'm quite proud of it!
