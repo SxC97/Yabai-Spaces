@@ -49,4 +49,4 @@ Download the yabai.1d.sh file and drop it into the Bitbar plugin folder. For a m
 - [ ] Add support for images in $SPACES
 - [ ] Add support for colored backgrounds?
 ## Credit
-Feel free to make changes and republish as you see fit but please give credit in the form of a link to this page! A lot of sleepless nights were spent on this project and as my first shell script i'm quite proud of it!
+Feel free to make changes and republish as you see fit but please give credit in the form of a link to this page! A lot of sleepless nights were spent on this project and as my first shell script, I'm quite proud of it!
