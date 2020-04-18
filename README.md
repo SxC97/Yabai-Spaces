@@ -63,7 +63,7 @@ Here are some example configurations to get you started.
 Name | Settings | Preview
 -----|----------|--------
 Arabic | `SPACES="1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 0"` | ![Arabic](/Images/Spaces/Arabic.png)
-Numbers | `SPACES="ONE TWO THREE FOUR FIVE SIX SEVEN EIGHT NINE TEN ELEVEN TWELVE THIRTEEN FOURTEEN FIFTEEN SIXTEEN ZERO"` | ![Numbers](/Images/Numbers.png)
+Numbers | `SPACES="ONE TWO THREE FOUR FIVE SIX SEVEN EIGHT NINE TEN ELEVEN TWELVE THIRTEEN FOURTEEN FIFTEEN SIXTEEN ZERO"` | ![Numbers](/Images/Spaces/Numbers.png)
 Roman | `SPACES="I II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI N"` | ![Roman](/Images/Spaces/Roman.png)
 Circles | `SPACES="① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨ ⑩ ⑪ ⑫ ⑬ ⑭ ⑮ ⑯ ⓪"` | ![Circles](/Images/Spaces/Circles.png)
 Negative | `SPACES="❶ ❷ ❸ ❹ ❺ ❻ ❼ ❽ ❾ ❿ ⓫ ⓬ ⓭ ⓮ ⓯ ⓰ ⓿"` | ![Negative](/Images/Spaces/Negative.png)
