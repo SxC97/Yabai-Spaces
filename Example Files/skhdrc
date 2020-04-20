@@ -3,36 +3,36 @@
                   index="$(yabai -m query --spaces --display | jq 'map(select(."native-fullscreen" == 0))[-1].index')" && \
                   yabai -m window --space "${index}" && \
                   yabai -m space --focus "${index}" && \
-                  open 'bitbar://refreshPlugin?name=yabai.1d.sh'
+                  open -gj 'bitbar://refreshPlugin?name=yabai.1d.sh'
 
 # create desktop and follow focus - uses jq for parsing json (brew install jq)
 shift + ctrl - n : yabai -m space --create && \
                 index="$(yabai -m query --spaces --display | jq 'map(select(."native-fullscreen" == 0))[-1].index')" && \
                 yabai -m space --focus "${index}" && \
-                open 'bitbar://refreshPlugin?name=yabai.1d.sh'
+                open -gj 'bitbar://refreshPlugin?name=yabai.1d.sh'
 
 # destroy desktop
 ctrl + alt - w : yabai -m space --destroy && \
-                open 'bitbar://refreshPlugin?name=yabai.1d.sh'; yabai -m window --focus recent
+                open -gj 'bitbar://refreshPlugin?name=yabai.1d.sh'; yabai -m window --focus recent
 
 # fast focus desktop
-ctrl - left : open 'bitbar://refreshPlugin?name=yabai.1d.sh'; yabai -m space --focus prev
-ctrl - right : open 'bitbar://refreshPlugin?name=yabai.1d.sh'; yabai -m space --focus next
+ctrl - left : open -gj 'bitbar://refreshPlugin?name=yabai.1d.sh'; yabai -m space --focus prev
+ctrl - right : open -gj 'bitbar://refreshPlugin?name=yabai.1d.sh'; yabai -m space --focus next
 
 # send window to desktop and follow focus
-shift + ctrl - left : yabai -m window --space prev; open 'bitbar://refreshPlugin?name=yabai.1d.sh'
-shift + ctrl - right : yabai -m window --space next; open 'bitbar://refreshPlugin?name=yabai.1d.sh'
+shift + ctrl - left : yabai -m window --space prev; open -gj 'bitbar://refreshPlugin?name=yabai.1d.sh'
+shift + ctrl - right : yabai -m window --space next; open -gj 'bitbar://refreshPlugin?name=yabai.1d.sh'
 
 # send window to monitor and follow focus
-ctrl + alt - left : yabai -m window --display prev; open 'bitbar://refreshPlugin?name=yabai.1d.sh'
-ctrl + alt - right : yabai -m window --display next; open 'bitbar://refreshPlugin?name=yabai.1d.sh'
+ctrl + alt - left : yabai -m window --display prev; open -gj 'bitbar://refreshPlugin?name=yabai.1d.sh'
+ctrl + alt - right : yabai -m window --display next; open -gj 'bitbar://refreshPlugin?name=yabai.1d.sh'
 
 # Move space left
-ctrl + alt + shift - left : yabai -m space --move prev && open 'bitbar://refreshPlugin?name=yabai.1d.sh'
+ctrl + alt + shift - left : yabai -m space --move prev && open -gj 'bitbar://refreshPlugin?name=yabai.1d.sh'
 
 # Move space right
-ctrl + alt + shift - right : yabai -m space --move next && open 'bitbar://refreshPlugin?name=yabai.1d.sh'
+ctrl + alt + shift - right : yabai -m space --move next && open -gj 'bitbar://refreshPlugin?name=yabai.1d.sh'
 
 # focus monitor
-alt - tab : yabai -m display --focus next && open 'bitbar://refreshPlugin?name=yabai.1d.sh'
-shift + alt - tab : yabai -m display --focus prev && open 'bitbar://refreshPlugin?name=yabai.1d.sh'
+alt - tab : yabai -m display --focus next && open -gj 'bitbar://refreshPlugin?name=yabai.1d.sh'
+shift + alt - tab : yabai -m display --focus prev && open -gj 'bitbar://refreshPlugin?name=yabai.1d.sh'
