@@ -45,6 +45,7 @@ Download the yabai.1d.sh file and drop it into the Bitbar plugin folder. For a m
 - [ ] Better multi monitor support. Display total number of spaces and selected space for each display. Would require a lot of refactoring, but, should be possible.
 - [ ] Better support for more than 16 spaces. Idea is to display as a fraction e.x. 16/30.
 - [ ] Add support for images in $SPACES
+- [ ] Add support for automatically activating "compact mode" of number of spaces gets beyond a set theshold.
 - [ ] Add support for colored backgrounds?
 ## Credit
 Feel free to make changes and republish as you see fit but please give credit in the form of a link to this page! A lot of sleepless nights were spent on this project and as my first shell script, I'm quite proud of it!
