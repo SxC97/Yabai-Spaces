@@ -3,3 +3,8 @@ yabai -m signal --add event=display_added action="open -gj 'bitbar://refreshPlug
 yabai -m signal --add event=display_removed action="open -gj 'bitbar://refreshPlugin?name=yabai.1d.sh'"
 yabai -m signal --add event=display_changed action="open -gj 'bitbar://refreshPlugin?name=yabai.1d.sh'"
 yabai -m signal --add event=display_moved action="open -gj 'bitbar://refreshPlugin?name=yabai.1d.sh'"
+yabai -m signal --add event=mission_control_exit action="open -gj 'bitbar://refreshPlugin?name=yabai.1d.sh'"
+yabai -m signal --add event=system_woke action="open -gj 'bitbar://refreshPlugin?name=yabai.1d.sh'"
+
+# add the following if you want window status reporting
+yabai -m signal --add event=window_focused="open -gj 'bitbar://refreshPlugin?name=yabai.1d.sh'"
