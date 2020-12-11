@@ -8,8 +8,8 @@ A *crazy* customizable Bitbar plugin that displays the total number of spaces an
 * User Customizable colors, numbers, unicode icons, fonts and sizes.
   * Well documented. Allows for even novice users to easily make changes.
   * Emoji Support!
+  * Support for a string of the same icons. e.g. SPACES="• • • • • • • • • • • • • • • •"
   * Multilingual support (_probably_).
-  * Compact mode to save space.
   * Full instructions in the [Wiki](https://github.com/SxC97/Yabai-Spaces/wiki)!
 * Fast! Code runs in log(n) time. Performance could probably be increased with a little refactoring to reduce programs calls.
 * Supports all versions of MacOS supported by Bitbar (_probably_).
@@ -35,16 +35,14 @@ Download the yabai.1d.sh file and drop it into the Bitbar plugin folder. For a m
  
  * Plugin displays "Updating..." text when switching spaces. I believe this is possible to [fix](https://github.com/matryer/bitbar/issues/545) but I have not managed to get this to work.
  
- * Sometimes does not update when closing fullscreen space from Mission Control. This is a Yabai issue as it does not count closing a fullscreen space as "destroyed".
- 
 ## Features To Add
 
+- [x] Better support for more than 16 spaces. Idea is to display as a fraction e.x. 16/30.
+- [x] Add support for a string of the same icons. e.g. SPACES="• • • • • • • • • • • • • • • •" and select the correct one. Not supported with the current parser.
 - [ ] Allow unique colors for bookends, dividers, icons, and selectors.
-- [ ] Add support for a string of the same icons. e.g. SPACES="• • • • • • • • • • • • • • • •" and select the correct one. Not supported with the current parser.
 - [ ] Allow shortcut to edit files in other text editors e.x. nvim, emacs, BBEdit, etc... Difficult to implement without a cli tool for said editor. For terminal editors, a clunky solution is `open 'iTerm' && nvim ~/.yabairc` and set `terminal=true` in the echo statement at the bottom. Unfortunately, this is not very reliable.
 - [ ] Better multi monitor support. Display total number of spaces and selected space for each display. Would require a lot of refactoring, but, should be possible.
-- [ ] Better support for more than 16 spaces. Idea is to display as a fraction e.x. 16/30.
-- [ ] Add support for images in $SPACES
+- [ ] Add support for images in $SPACES?
 - [ ] Add support for automatically activating "compact mode" if number of spaces gets beyond a set theshold.
 - [ ] Add support for colored backgrounds?
 ## Credit
