@@ -90,6 +90,25 @@ SPACES=('•' '•' '•' '•' '•' '•' '•' '•' '•' '•' '•' '•' 
 
 STYLE="CUSTOM"
 
+# Choose weather or not you want to see the type of the current space. i.e. BSP, STACK, or FLOAT
+# Options, `true` or `false`
+
+SPACETYPE=true
+BSP="◇"
+STACK="◆"
+FLOAT="◈"
+SPACELEFT=" "
+SPACERIGHT=" "
+
+# Choose weather or not you want to see the type of the window. i.e. floating or managed
+# Options, `true` or `false`
+
+WINTYPE=true
+WINFLOAT="⦿"
+WINMANAGED="⦾"
+WINLEFT=" "
+WINRIGHT=" "
+
 # -------------------------------------------------------------------------#
 # Don't edit anything below this point if you dont know what you're doing! #
 # -------------------------------------------------------------------------#
@@ -121,9 +140,40 @@ elif [ "$STYLE" = "CUSTOM" ]; then
   done
 fi
 
-STRING+=$RIGHT
+FINALSTRING=$(echo "$STRING$RIGHT" | tr -s "$DIV")
 
-echo "$STRING" | tr -s "$DIV"
+TYPE=$(yabai -m query --spaces --space | jq .type)
+
+if [[ $TYPE == *"bsp"* ]]; then
+  TYPE=$BSP
+elif [[ $TYPE == *"stack"* ]]; then
+  TYPE=$STACK
+elif [[ $TYPE == *"float"* ]]; then
+  TYPE=$FLOAT
+else
+  TYPE=''
+fi
+
+WINDOW=$(yabai -m query --windows --window | jq .floating) 2> /dev/null
+
+if ! [ -z "$WINDOW" ] && [[ $WINDOW -eq "0" ]]; then
+  WINDOW=$WINMANAGED
+elif ! [ -z "$WINDOW" ] && [[ $WINDOW -eq "1" ]]; then
+  WINDOW=$WINFLOAT
+else
+  WINDOW=''
+fi
+
+if [[ "$SPACETYPE" = true ]] && [[ "$WINTYPE" = true ]]; then
+  FINAL=$FINALSTRING$SPACELEFT$TYPE$SPACERIGHT$WINLEFT$WINDOW$WINRIGHT
+elif [[ "$SPACETYPE" = true ]]; then
+  FINAL=$FINALSTRING$SPACELEFT$TYPE$SPACERIGHT
+elif [[ "$WINTYPE" = true ]]; then
+  FINAL=$FINALSTRING$WINLEFT$WINDOW$WINRIGHT
+fi
+
+echo "$FINAL"
+
 echo "---"
 echo "Restart yabai & skhd | bash='$0' param1=restart terminal=false"
 echo "Stop yabai & skhd | bash='$0' param1=stop terminal=false"
