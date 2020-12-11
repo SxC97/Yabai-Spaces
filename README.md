@@ -9,6 +9,7 @@ A *crazy* customizable Bitbar plugin that displays the total number of spaces an
   * Well documented. Allows for even novice users to easily make changes.
   * Emoji Support!
   * Support for a string of the same icons. e.g. SPACES="• • • • • • • • • • • • • • • •"
+  * Support for an infinite number of spaces
   * Multilingual support (_probably_).
   * Full instructions in the [Wiki](https://github.com/SxC97/Yabai-Spaces/wiki)!
 * Fast! Code runs in log(n) time. Performance could probably be increased with a little refactoring to reduce programs calls.
@@ -16,7 +17,7 @@ A *crazy* customizable Bitbar plugin that displays the total number of spaces an
 * Multi monitor support.
 * Deep integration with Yabai and SKHD
 * Light mode and Dark mode support!
-* High Preformance! Plugin only runs when space focus is changes, space is created, or destroid.
+* High Preformance! Plugin only runs when space focus is changes, space is created, or destroyed.
 
 ## The Problem So Far
 I use the Yabai Window Manager for MacOS. One of the freatures of Yabai is disabling the animation when changing spaces. For power users, this is a great feature that speeds up your workflow. The issue is that sometimes it can be difficult to know which space you're on without the animations. Yabai includes a default bar that gives you this information, but it isn't _that_ customizable and requires that the default menu bar be hidden. I have several other utilities in the menubar (such as iStatsMenu and Carrot Weather) and don't want them hidden all the time. Übersicht widgets also wouldn't work for this reason.
