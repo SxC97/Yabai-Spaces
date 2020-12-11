@@ -10,6 +10,8 @@ A *crazy* customizable Bitbar plugin that displays the total number of spaces an
   * Emoji Support!
   * Support for a string of the same icons. e.g. SPACES="• • • • • • • • • • • • • • • •"
   * Support for an infinite number of spaces
+  * Support for space type (bsp, stack, and float)
+  * Support for window status (float, unfloat)
   * Multilingual support (_probably_).
   * Full instructions in the [Wiki](https://github.com/SxC97/Yabai-Spaces/wiki)!
 * Supports all versions of MacOS supported by Bitbar (_probably_).
