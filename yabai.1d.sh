@@ -109,6 +109,10 @@ WINMANAGED="⦾"
 WINLEFT=" "
 WINRIGHT=" "
 
+# Set left and right separators for displays
+DISPLAYLEFT=" "
+DISPLAYRIGHT=" "
+
 # -------------------------------------------------------------------------#
 # Don't edit anything below this point if you dont know what you're doing! #
 # -------------------------------------------------------------------------#
@@ -117,6 +121,16 @@ CURRENT=$(yabai -m query --spaces --display | jq 'map(select(."focused" == 1))[-
 TOTAL=$(yabai -m query --spaces | jq '. | length')
 STRING="$DEFAULT$LEFT" 
 i=1
+
+for DISPLAY in $(yabai -m query --displays | jq '. | length'); do 
+  VAR=$(yabai -m query --displays --display $DISPLAY | jq '.spaces | .[0]')
+  SPACES[VAR]=$DISPLAYLEFT$SPACES[VAR]
+done
+
+for DISPLAY in $(yabai -m query --displays | jq '. | length'); do 
+  VAR=$(yabai -m query --displays --display $DISPLAY | jq '.spaces | .[-1]')
+  SPACES[VAR]=$SPACES[VAR]$DISPLAYRIGHT
+done
 
 if [ "$STYLE" = "NUMBER" ]; then  
   while [ $i -le $TOTAL ]; do
