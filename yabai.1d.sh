@@ -68,9 +68,9 @@ DEFAULT=$WHITE
 
 LEFT=''
 RIGHT=''
-DIV='_'
-SELECTLEFT='_'
-SELECTRIGHT='_'
+DIV=' '
+SELECTLEFT=' '
+SELECTRIGHT=' '
 
 # Change your font here! Make sure you only change the stuff on the right of the '='. You can get the exact name of your font from the FontBook application on MacOS.
 # A monowidth font (such as FuraCode) is recomended. Ligatures are a plus!
