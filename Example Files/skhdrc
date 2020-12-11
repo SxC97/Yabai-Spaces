@@ -36,3 +36,7 @@ ctrl + alt + shift - right : yabai -m space --move next && open -gj 'bitbar://re
 # focus monitor
 alt - tab : yabai -m display --focus next && open -gj 'bitbar://refreshPlugin?name=yabai.1d.sh'
 shift + alt - tab : yabai -m display --focus prev && open -gj 'bitbar://refreshPlugin?name=yabai.1d.sh'
+
+# toggle float/unfloat for current window
+# float / unfloat window and center on screen
+ctrl + alt - backspace : yabai -m window --toggle float && open -gj 'bitbar://refreshPlugin?name=yabai.1d.sh'
