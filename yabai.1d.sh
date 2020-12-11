@@ -123,7 +123,7 @@ fi
 
 STRING+=$RIGHT
 
-echo ${STRING//$DIV$DIV/$DIV}
+echo "$STRING" | tr -s "$DIV"
 echo "---"
 echo "Restart yabai & skhd | bash='$0' param1=restart terminal=false"
 echo "Stop yabai & skhd | bash='$0' param1=stop terminal=false"
