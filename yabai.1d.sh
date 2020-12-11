@@ -68,9 +68,9 @@ DEFAULT=$WHITE
 
 LEFT=''
 RIGHT=''
-DIV=' '
-SELECTLEFT=' '
-SELECTRIGHT=' '
+DIV='_'
+SELECTLEFT='_'
+SELECTRIGHT='_'
 
 # Change your font here! Make sure you only change the stuff on the right of the '='. You can get the exact name of your font from the FontBook application on MacOS.
 # A monowidth font (such as FuraCode) is recomended. Ligatures are a plus!
@@ -96,7 +96,7 @@ STYLE="CUSTOM"
 
 CURRENT=$(yabai -m query --spaces --display | jq 'map(select(."focused" == 1))[-1].index')
 TOTAL=$(yabai -m query --spaces | jq '. | length')
-STRING="$LEFT" 
+STRING="$DEFAULT$LEFT" 
 i=1
 
 if [ "$STYLE" = "NUMBER" ]; then  
@@ -105,7 +105,7 @@ if [ "$STYLE" = "NUMBER" ]; then
       STRING+="$COLOR$SELECTLEFT${i}$SELECTRIGHT$DEFAULT"
       i=$(( $i + 1 ))
     else
-      STRING+="$DEFAULT$DIV${i}$DIV$DEFAULT"
+      STRING+="$DIV${i}$DIV"
       i=$(( $i + 1 ))
     fi
   done
@@ -115,7 +115,7 @@ elif [ "$STYLE" = "CUSTOM" ]; then
       STRING+="$COLOR$SELECTLEFT${SPACES[i]}$SELECTRIGHT$DEFAULT"
       i=$(( $i + 1 ))
     else
-      STRING+="$DEFAULT$DIV${SPACES[i]}$DIV$DEFAULT"
+      STRING+="$DIV${SPACES[i]}$DIV"
       i=$(( $i + 1 ))
     fi
   done
