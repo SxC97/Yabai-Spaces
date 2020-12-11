@@ -36,6 +36,12 @@ Download the yabai.1d.sh file and drop it into the Bitbar plugin folder. For a m
  
  * Plugin displays "Updating..." text when switching spaces. I believe this is possible to [fix](https://github.com/matryer/bitbar/issues/545) but I have not managed to get this to work.
  
+ * Final output needs cleanup to fix:
+
+   * $DIV$DIV → $DIV
+   * $DIV$SELECTLEFT → $SELECTLEFT
+   * $SELECTRIGHT$DIV → $SELECTRIGHT
+ 
 ## Features To Add
 
 - [x] Better support for more than 16 spaces. Idea is to display as a fraction e.x. 16/30.
