@@ -1,6 +1,6 @@
 # Yabai-Spaces
 
-A *crazy* customizable Bitbar plugin that displays the total number of spaces and highlights the current one.
+A *crazy* customizable Bitbar/SwiftBar plugin that displays the total number of spaces and highlights the current one.
 
 ![Aqua](/Images/Colors/Aqua.png)
 
@@ -14,7 +14,7 @@ A *crazy* customizable Bitbar plugin that displays the total number of spaces an
   * Support for window status (float, unfloat)
   * Multilingual support (_probably_).
   * Full instructions in the [Wiki](https://github.com/SxC97/Yabai-Spaces/wiki)!
-* Supports all versions of MacOS supported by Bitbar (_probably_).
+* Supports all versions of MacOS supported by Bitbar/SwiftBar (_probably_).
 * Multi monitor support!
 * Deep integration with Yabai and SKHD
 * Light mode and Dark mode support!
@@ -28,7 +28,7 @@ I use the Yabai Window Manager for MacOS. One of the freatures of Yabai is disab
 This plugin (based on the [yabai/skhd helper](https://getbitbar.com/plugins/Tools/yabai_skhd.1s.sh) plugin by James Won) for Bitbar, displays the total number of spaces you have open and highlights the currently focused space.
 
 ## Dependencies
-[Yabai](https://github.com/koekeishiya/yabai), [SHKD](https://github.com/koekeishiya/skhd), [Bitbar](https://github.com/matryer/bitbar), [jq](https://stedolan.github.io/jq/), [Visual Studio Code](https://code.visualstudio.com), [zsh](http://www.zsh.org), and [brew](https://brew.sh)
+[Yabai](https://github.com/koekeishiya/yabai), [SHKD](https://github.com/koekeishiya/skhd), [Bitbar](https://github.com/matryer/bitbar) or [SwiftBar](https://github.com/swiftbar/SwiftBar), [jq](https://stedolan.github.io/jq/), [Visual Studio Code](https://code.visualstudio.com), [zsh](http://www.zsh.org), and [brew](https://brew.sh)
 
 ## Installation Instructions
 
@@ -36,9 +36,9 @@ Download the yabai.1d.sh file and drop it into the Bitbar plugin folder. For a m
 
 ## Known Issues
  
- * Plugin displays "Updating..." text when switching spaces. I believe this is possible to [fix](https://github.com/matryer/bitbar/issues/545) but I have not managed to get this to work.
+ - [x] ~~Plugin displays "Updating..." text when switching spaces. I believe this is possible to [fix](https://github.com/matryer/bitbar/issues/545) but I have not managed to get this to work.~~ Fixed when using SwiftBar.
  
- * Final output needs cleanup to fix:
+ - [ ] Final output needs cleanup to fix:
 
    * $DIV$DIV → $DIV
    * $DIV$SELECTLEFT → $SELECTLEFT
