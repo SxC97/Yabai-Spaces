@@ -184,6 +184,8 @@ elif [[ "$SPACETYPE" = true ]]; then
   FINAL=$FINALSTRING$SPACELEFT$TYPE$SPACERIGHT
 elif [[ "$WINTYPE" = true ]]; then
   FINAL=$FINALSTRING$WINLEFT$WINDOW$WINRIGHT
+elif [[ "$SPACETYPE" = false ]] && [[ "$WINTYPE" = false ]]; then
+  FINAL=$FINALSTRING
 fi
 
 echo "$FINAL"
