@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # <bitbar.title>Yabai-Spaces</bitbar.title>
-# <bitbar.version>v1.0</bitbar.version>
+# <bitbar.version>v1.5</bitbar.version>
 # <bitbar.author>Shrey Choudhary</bitbar.author>
 # <bitbar.author.github>SxC97</bitbar.author.github>
 # <bitbar.desc>Plugin that displays total number of spaces and highlights the current space.</bitbar.desc>
